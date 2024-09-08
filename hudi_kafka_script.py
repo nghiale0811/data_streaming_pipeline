@@ -100,6 +100,6 @@ def process_batch_message(df, batch_id):
 
 query = kafka_df.writeStream \
     .foreachBatch(process_batch_message) \
-    .option("checkpointLocation", "path/to/HDFS/dir") \
+    .option("checkpointLocation", "checkpoint") \
     .trigger(processingTime="1 minutes") \
     .start().awaitTermination()
