@@ -1,4 +1,4 @@
-# Data streaming pipeline with Kafka, Spark, and Hudi
+# Data streaming pipeline with Kafka, Spark, Zookeeper, and Hudi
 
 ## Steps 
 
